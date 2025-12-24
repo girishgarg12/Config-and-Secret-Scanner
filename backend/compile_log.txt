@@ -1,0 +1,128 @@
+Dec 22, 2025 2:11:07 PM org.jline.utils.Log logr
+WARNING: Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+[main] WARNING org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+[WARNING] Unable to find the root directory. Create a .mvn directory in the root directory or add the root="true" attribute on the root project's model to identify it.
+[INFO] Processing build on daemon ed3c8c83
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] 1 problem was encountered while building the effective model for 'com.configscanner:backend:jar:0.0.1-SNAPSHOT' (use -e to see details)
+[WARNING] 
+[WARNING] Total model problems reported: 1
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] BuildTimeEventSpy is registered.
+[INFO] 
+[INFO] Using the SmartBuilder implementation with a thread count of 7
+[INFO] 
+[INFO] -----------------------------------------< com.configscanner:backend >------------------------------------------
+[INFO] Building Config Scanner Backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] ----------------------------------------------------[ jar ]-----------------------------------------------------
+[WARNING] 1 problem was encountered while building the effective model for 'org.springframework.data:spring-data-mongodb:jar:4.2.0' during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for 'org.springframework.data:spring-data-commons:jar:3.2.0' during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 7 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[48,15] cannot find symbol
+  symbol:   method setProjectName(java.lang.String)
+  location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[49,15] cannot find symbol
+  symbol:   method setScanType(java.lang.String)
+  location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[50,15] cannot find symbol
+  symbol:   method setTimestamp(java.time.LocalDateTime)
+  location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[51,15] cannot find symbol
+  symbol:   method setIssues(java.util.List<com.configscanner.model.Issue>)
+  location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[52,15] cannot find symbol
+  symbol:   method setTotalIssues(int)
+  location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[53,15] cannot find symbol
+  symbol:   method setStatus(java.lang.String)
+  location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[84,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[98,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[103,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[113,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[123,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+  required: no arguments
+  found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[INFO] 11 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ----------------------------------------------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ----------------------------------------------------------------------------------------------------------------
+[INFO] Total time:  2.960 s (Wall Clock)
+[INFO] Finished at: 2025-12-22T14:11:13+05:30
+[INFO] ----------------------------------------------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project backend: Compilation failure: Compilation failure: 
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[48,15] cannot find symbol
+[ERROR]   symbol:   method setProjectName(java.lang.String)
+[ERROR]   location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[49,15] cannot find symbol
+[ERROR]   symbol:   method setScanType(java.lang.String)
+[ERROR]   location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[50,15] cannot find symbol
+[ERROR]   symbol:   method setTimestamp(java.time.LocalDateTime)
+[ERROR]   location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[51,15] cannot find symbol
+[ERROR]   symbol:   method setIssues(java.util.List<com.configscanner.model.Issue>)
+[ERROR]   location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[52,15] cannot find symbol
+[ERROR]   symbol:   method setTotalIssues(int)
+[ERROR]   location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[53,15] cannot find symbol
+[ERROR]   symbol:   method setStatus(java.lang.String)
+[ERROR]   location: variable result of type com.configscanner.model.ScanResult
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[84,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[98,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[103,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[113,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /E:/Developement/DevopsProject/backend/src/main/java/com/configscanner/service/ScannerService.java:[123,24] constructor Issue in class com.configscanner.model.Issue cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the '-e' switch
+[ERROR] Re-run Maven using the '-X' switch to enable verbose output
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/CompilationFailureException

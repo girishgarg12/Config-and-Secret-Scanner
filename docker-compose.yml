@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: config-scanner-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build: ./backend
+    container_name: config-scanner-backend
+    ports:
+      - "8081:8080"
+    depends_on:
+      - mongodb
+    environment:
+      SERVER_PORT: 8080
+      SPRING_DATA_MONGODB_URI: mongodb://mongodb:27017/config-scanner
+
+  frontend:
+    build: ./frontend
+    container_name: config-scanner-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
