@@ -11,7 +11,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/scan")
-@CrossOrigin(origins = "http://localhost:5173") // Allow frontend access
 public class ScanController {
 
     @Autowired
