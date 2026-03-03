@@ -115,6 +115,5 @@ DevopsProject/
 3.  View the results on the dashboard, categorized by severity.
 4.  Drill down into specific files to see the exact line numbers and issues detected.
 
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+
